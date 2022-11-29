@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Document</title>
+    <script>
+
+        alert("En esta tarea interactuamos por primera vez con JS, empezamos con alert desde el <head>" + 
+            " también con alert desde el <body> y por ultimo pusimos diferentes botones que hacian saltar" + 
+                " otro alert de diferentes funciones.")
+    </script>
+</head>
+<body>
+    <div id="contenedor_home">
+        <a href="index.html"><div id="home"></div></a>
+    </div>
+    <h1>Hola</h1>
+
+    <script>
+        function saludar(){
+         alert("Saludo desde el body")
+        }
+
+    
+    </script>
+    <br>
+    <hr>
+
+    <button onclick="saludar()">Saludo</button>
+
+    <button onclick="despedir()">Despedida</button>
+    
+    <button onclick="Nombre()">Nombre</button>
+    
+    <button onclick="Carrera()">Carrera</button>
+    
+    <button onclick="Edad()">Edad</button>
+    
+</body>
+<script src="apps/app.js"></script>
+</html>

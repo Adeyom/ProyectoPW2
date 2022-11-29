@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Tarea5</title>
+    <script>
+
+        alert("En clase realizamos pseudocodigos, que posteriormente pasariamos a código en el lenguaje de nuestra preferencia" + 
+        " en mi caso los hice con JAVA, aqui muestro los codigos.");
+    </script>
+</head>
+<body>
+    <div id="contenedor_home">
+        <a href="index.html"><div id="home"></div></a>
+    </div>
+
+    <h2>Programa que imprime tu nombre </h2>
+        String nombre;
+        <br>
+        Scanner teclado = new Scanner(System.in);
+        <br>
+        System.out.println("Escriba su nombre");
+        <br>
+        nombre = teclado.nextLine(); 
+        <br>
+        System.out.println("Tu nombre es: " + nombre);
+        <br>
+        <hr>
+    <h2>Suma de dos números</h2>
+    Scanner teclado = new Scanner(System.in);
+    <br>
+    int num, num2, res; 
+    <br>
+    System.out.println("Digite el primer numero: ");
+    <br>
+    num = teclado.nextInt(); 
+    <br>
+    System.out.println("Digite el segundo numero: ");
+    <br>
+    num2 = teclado.nextInt(); 
+    <br>
+    res = num + num2; 
+    <br>
+    System.out.println("El resultado es: " + res);
+    <br>
+    <hr>
+    <h2>Numero dentro de un rango</h2>
+         Scanner teclado = new Scanner(System.in);
+        <br>
+        int numero;
+        <br>
+        System.out.println("Digite un numero: "); 
+        <br>
+        numero = teclado.nextInt(); 
+        <br>
+        if (numero>=1 && numero<=10) { 
+        <br>
+            System.out.println("Tu numero esta en el rango de 1-10");
+        <br>
+        } else {
+        <br>
+            System.out.println("Tu numero esta fuera del rango de 1-10");
+        <br>
+        }
+        <br>
+        <hr>
+    <h2>Numero dentro de un rango</h2>
+    Scanner teclado = new Scanner(System.in);
+    <br>
+    int a, b, c, d; 
+    <br>
+    System.out.println("Digite el valor de a");
+    <br>
+    a = teclado.nextInt();
+    <br>
+    System.out.println("Digite el valor de  b");
+    <br>
+    b = teclado.nextInt();
+    <br>
+    System.out.println("Digite el valor de c");
+    <br>
+    c = teclado.nextInt(); 
+    <br>
+    if ((a < b) && (b == c)) {
+    <br>
+        d = a + b + c;
+    <br>
+        System.out.println("Las condiciones se cumplen, se hace la suma de a, b y c");
+    <br>
+        System.out.println("La suma es: " + d);
+    <br>
+    }
+    else
+    <br>
+        System.out.println("Condiciones falsas");
+    <br>
+    <hr>
+    <h2>Ejemplo de OR</h2>
+    Scanner teclado = new Scanner(System.in);
+    <br>
+        int a, b, c, d; 
+        <br>
+        System.out.println("Digite el valor de a: ");
+        <br>
+        a = teclado.nextInt(); 
+        <br>
+        System.out.println("Digite el valor de b: ");
+        <br>
+        b = teclado.nextInt(); 
+        <br>
+        System.out.println("Digite el valor de c: ");
+        <br>
+        c = teclado.nextInt(); 
+        <br>
+        System.out.println("Digite el valor de d: ");
+        <br>
+        d = teclado.nextInt();
+        <br>
+  
+        System.out.println("Numero1 = " + a);
+        <br>
+        System.out.println("Numero2 = " + b);
+        <br>
+        System.out.println("Numero3 = " + c);
+        <br>
+        System.out.println("Numero4 = " + d);
+        <br>
+  
+        if (a > b || c == d)
+        <br>
+            System.out.println("Se cumple alguna de las condiciones");
+            <br>
+        else
+        <br>
+            System.out.println("Las dos condiciones son falsas");
+            <br>
+            <hr>
+    <h2>Ejemplo con NOT</h2>
+    int a = 10, b = 1; 
+    <br>
+    System.out.println("Valor a = " + a);
+    <br>
+    System.out.println("Valor b = " + b);
+    <br> 
+    System.out.println("!(a < b) = " + !(a < b));
+    <br>
+    System.out.println("!(a > b) = " + !(a > b));
+    <br>
+    <hr>
+
+    <h2>Ejemplo de adivinar número aleatorio</h2>
+    Scanner teclado = new Scanner(System.in);
+    <br>
+    int a = (int) ((Math.random() * 100)+1); 
+    <br>
+     int b; 
+     <br>
+     int i; 
+     <br>
+    
+     System.out.println("El juego consiste en averiguar un numero secreto de 100 posibles.");
+     <br>
+    
+     System.out.print("Tienes 5 intentos. Escribe un numero entre 1 y 100: ");
+     <br>
+     b = teclado.nextInt();
+     <br>
+    
+     for (i=0; i<=4; i++) { 
+    <br>
+    
+        
+        if (a == b) {  
+            <br>
+          System.out.println("Has acertado"); 
+          <br>
+          break; } 
+          <br>
+        
+        else if (i == 4) { 
+            <br>
+          System.out.println("Lo siento: has perdido. El numero era el: " + a); 
+          <br>
+          break; }
+          <br> 
+        else if (a > b)
+        <br> 
+          System.out.println("El numero secreto es MAYOR que " + b);
+          <br>
+        else if (a < b)
+        <br>
+          System.out.println("El numero secreto es MENOR que " + b);
+          <br> 
+        if (i <=1) {
+            <br> 
+         System.out.print("Otro intento: "); 
+         <br>
+         b = teclado.nextInt(); }
+         <br> 
+        else if (i ==2) { 
+            <br>
+        int x = (int) (a/10);
+        <br>
+        System.out.println("Una pista, la primera cifra es " + x);
+        <br>
+        System.out.print("Intentalo de nuevo: ");
+        <br>
+        b = teclado.nextInt(); }
+        <br> 
+       else if (i >= 3) {
+        <br>
+       System.out.print("Intento final:  ");
+       <br>
+       b = teclado.nextInt(); }
+       <br>
+            
+                            }
+                            <br>
+        <hr>
+    
+
+
+
+
+
+</body>
+</html>

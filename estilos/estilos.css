@@ -1,0 +1,67 @@
+body{
+    background-color: #202052;
+    align-content: center;
+    color: aliceblue;
+}
+
+a{
+    color: aliceblue;
+}
+
+#titulo{
+    background-color: #202052;
+    height: auto;
+    text-align: center;
+    font-size: 150px;
+    font-family: serif;
+    color: #00FF00 ;
+}
+
+#contenedor{
+    background-color: #202052;
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clases{
+    float: left;
+    height:204px;
+    width: 307px;
+    margin-left: 30px;
+    
+}
+
+#clase1{
+    background-image: url("imagenes/tarea1.png");
+}
+#clase5{
+    background-image: url("imagenes/tarea5.png");
+}
+#clase6{
+    background-image: url("imagenes/tarea6.png");
+}
+#clase7{
+    background-image: url("imagenes/tarea7.png");
+}
+
+#contenedor_home{
+    background-color: #202052;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home{
+    background-image: url("imagenes/home.png");
+    height: 75px;
+    width: 80px;
+}
+
+button{
+    align-content: center;
+}
+
